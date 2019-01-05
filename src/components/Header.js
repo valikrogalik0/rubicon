@@ -19,26 +19,37 @@ export default class Header extends Component {
                         RUBICON
                     </Link>
                     <Route path="/" component={ Item } />
-                <div className="header-navigation">
-                    
+                {/* <div className="header-navigation"> */}
+                    <ul className="header-menu">
+                        <li className="sub-menu">
                             <Link to="/" >HOME</Link>
-                        
-                            <Link to="/shop" >SHOP</Link>
-                            <span className="arrow" >▾</span>
-                        
+                        </li>
+                        <li className="sub-menu">
+                            <Link to="/shop" >SHOP ▾</Link>
+                            {/* <span className="arrow" >▾</span> */}
+                        </li>
+                        <li className="sub-menu">
                             <Link to="/contacts" >CONTACTS</Link>
-                        
-                            <Link to="" id="account"></Link>
-
-                            <span id="search" ></span>
-                        
-                            <Link to="" id="basket"></Link>
+                        </li>
+                        <li className="sub-menu">
+                            <Link to="" id="account">
+                                
+                            </Link>
+                        </li>
+                        <li className="sub-menu">
+                            <Link id="search" to=""></Link>
+                        </li>
+                        <li className="sub-menu">
+                            <Link to="" id="basket">
+                            </Link>
+                        </li>
                             {/* <Route path='' component={}/>
                             <Route path='' component={}/>
                             <Route path='' component={}/>
                             <Route path='' component={}/>
                             <Route path='' component={}/> */}
-                </div>
+                    </ul>
+                {/* </div> */}
             </div>
             <div className="blue"></div>
             <div className="red"></div>
